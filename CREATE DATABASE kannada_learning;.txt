@@ -1,0 +1,25 @@
+CREATE DATABASE kannada_learning;
+USE kannada_learning;
+CREATE TABLE letters (
+         id INT AUTO_INCREMENT PRIMARY KEY,
+         letter_name VARCHAR(255) NOT NULL,
+         letter_image VARCHAR(255) NOT NULL,  -- Path to the image file
+         english_phonetic VARCHAR(255) NOT NULL,  -- Phonetic transcription of the letter
+         group_type ENUM('Swaragalu', 'Yogavahagalu', 'Vyanjanagalu') NOT NULL  -- Group classification
+     );
+INSERT INTO letters (letter_name, letter_image, english_phonetic, group_type)
+     VALUES
+     ('ಅ', 'images/1.png', 'a', 'Swaragalu'),
+     ('ಆ', 'images/2.png', 'aa', 'Swaragalu'),
+     ('ಇ', 'images/3.png', 'i', 'Swaragalu'),
+     ('ಈ', 'images/4.png', 'ii', 'Swaragalu'),
+     ('ಉ', 'images/5.png', 'u', 'Swaragalu'),
+     ('ಊ', 'images/6.png', 'uu', 'Swaragalu'),
+     ('ಋ', 'images/7.png', 'ru', 'Swaragalu'),('ಎ', 'images/8.png', 'e', 'Swaragalu'),('ಏ', 'images/9.png', 'ee', 'Swa
+ragalu'),('ಐ', 'images/10.png', 'ai', 'Swaragalu'),('ಌ', 'images/11.png', 'o', 'Swaragalu'),('ೡ', 'images/12.png', 'oo'
+, 'Swaragalu'),('oh', 'images/13.png', 'ow', 'Swaragalu');
+
+ INSERT INTO letters (letter_name, letter_image, english_phonetic, group_type)
+     VALUES
+     ('ಅಂ', 'images/y1.png', 'amm', 'Yogavahagalu'),
+     ('ಅಃ', 'images/y2.png', 'aha', 'Yogavahagalu');
